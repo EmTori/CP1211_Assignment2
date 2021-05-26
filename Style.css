@@ -11,6 +11,26 @@
     
 }
 
+.navigationBar {
+    box-sizing: border-box;
+    background-color: rgb(161, 161, 161);
+    
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-basis: auto;
+
+}
+
+div a {
+    flex: 0 1 100px;
+    padding: 10px;
+    font-size: 150%;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-stretch: expanded;
+}
+
 
 h1 {
     letter-spacing: 4px;

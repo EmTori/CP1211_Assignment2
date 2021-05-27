@@ -1,0 +1,19 @@
+.navigationBar {
+    box-sizing: border-box;
+    background-color: rgb(161, 161, 161);
+    
+    /*width: 100%;*/
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    flex-basis: auto;
+
+}
+
+div a {
+    /*padding: 10px;*/ 
+    font-size: 150%;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

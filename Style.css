@@ -15,9 +15,43 @@ footer {
    background-color: rgb(161, 161, 161);
    border-bottom: 6px double rgb(85, 85, 85);
    border-top: 6px double rgb(85, 85, 85);
-
-
 }   
+
+@media (max-width: 950px ) {
+
+	.navigationBar {
+		
+		/*margin-right: 2.9em;
+		margin-left: 2.9em;
+		padding: 0;
+		text-align: center;
+		text-decoration: none;
+        margin: 0;
+		padding: .10em;
+        background-color: rgba(148, 187, 255, 1.0);
+		padding: .60em;*/
+	}
+
+    .navigationBar i {
+        /*display: none;*/
+
+    }
+
+	.navigationBar a {
+        display: none;
+        
+		/*padding: 1em;
+		text-decoration: none;*/
+	}
+}
+
+@media (max-width: 800px ){
+    h1 .fas{
+        display: none;
+
+    }
+
+}
 
 .navigationBar {
     width: 94%;
@@ -25,13 +59,29 @@ footer {
     z-index: 100;
     border-bottom: 6px double rgb(85, 85, 85);
     border-top: 6px double rgb(85, 85, 85);
+
+    box-sizing: border-box;
+    background-color: rgb(161, 161, 161);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    position: fixed;    
+}
+
+.navigationBar i {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .navigationBar a {
     color: black;
-    padding: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 4px;
     font-weight: bolder;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -54,7 +104,7 @@ h1 {
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 6px;
-    margin-top: 68px;
+    margin-top: 60px;
 }
 
 h2 {
@@ -73,6 +123,10 @@ h3 {
     padding-bottom: 1%;
     padding-left: 20px;
     text-decoration: underline;
+}
+
+h3.homePage{
+    color: rgb(207, 17, 74);
 }
 
 h3.favoriteGames {

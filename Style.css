@@ -19,15 +19,32 @@ footer {
 
 }   
 
-
 .navigationBar {
     width: 94%;
     top: 0;
     z-index: 100;
     border-bottom: 6px double rgb(85, 85, 85);
     border-top: 6px double rgb(85, 85, 85);
+}
 
+.navigationBar a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+.navigationBar a:hover {
+    background-color: rgb(133, 133, 133);
+    color: black;
+}
+
+.navigationBar a.active {
+    background-color: rgb(207, 17, 74);
+    color: white;
 }
 
 h1 {
@@ -37,7 +54,7 @@ h1 {
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 6px;
-    margin-top: 63px;
+    margin-top: 68px;
 }
 
 h2 {
@@ -183,5 +200,8 @@ button{
 
 }
  
-
+h1 .fas {
+    padding-left: 100px;
+    padding-right: 100px;
+}
 

@@ -11,8 +11,24 @@
     
 }
 
-footer {   
-    background-color: rgb(161, 161, 161);}
+footer {
+   background-color: rgb(161, 161, 161);
+   border-bottom: 6px double rgb(85, 85, 85);
+   border-top: 6px double rgb(85, 85, 85);
+
+
+}   
+
+
+.navigationBar {
+    width: 94%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 6px double rgb(85, 85, 85);
+    border-top: 6px double rgb(85, 85, 85);
+
+
+}
 
 h1 {
     letter-spacing: 4px;
@@ -21,6 +37,7 @@ h1 {
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 6px;
+    margin-top: 63px;
 }
 
 h2 {

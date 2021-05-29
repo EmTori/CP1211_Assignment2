@@ -17,8 +17,6 @@ footer {
    border-top: 6px double rgb(85, 85, 85);
 }   
 
-
-
 .navigationBar {
     width: 94%;
     top: 0;
@@ -232,12 +230,97 @@ h1 .fas {
     background-color: rgb(194, 194, 194);
 }
 
+.shortText {
+    display: none;
+}
+
+.gridContainer2, .gridContainer3, .gridContainer5 {
+    display: none;
+}
+
+@media (max-width: 1300px ) {
+    .gridContainer1 {
+        display: none;
+    }
+
+    .gridContainer3 {
+        display: inline;
+    }
+
+    .bottomText {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1200px ) {
+    .gridContainer4 {
+        display: none;
+    }
+
+    .gridContainer5 {
+        display: inline;
+    }
+
+    .gridContainer5 figcaption {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(194, 194, 194);
+    }
+
+    .centerTwitch, .centerYoutube{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 1000px ) {
+    .longText {
+        display: none;
+    }
+
+    .shortText {
+        display: inline-flex;
+    }
+
+    .gridContainer5 figcaption {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
 
 @media (max-width: 800px ) {
     h1 .fas {
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .gridContainer1, .gridContainer3 {
+        display: none;
+    }
+
+    .gridContainer2 {
+        display: inline;
+    }
+
+    .centerGameBoy {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    figcaption {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(194, 194, 194);
+    }
+
 }
 
 @media (max-width: 700px ) {
@@ -264,13 +347,11 @@ h1 .fas {
         padding-left: 10px;
         padding-right: 10px;
     }
-
-    @media (max-width: 400px ) {
-        h1 .fas {
-            display: none;
-        }
-    }
 }
 
-
+@media (max-width: 400px ) {
+     h1 .fas {
+        display: none;
+    }
+}
 

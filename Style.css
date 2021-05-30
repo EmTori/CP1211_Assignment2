@@ -85,7 +85,7 @@ h2 {
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 150%;
-    padding-top: 4%;
+    padding-top: 2%;
     padding-bottom: 1%;
     padding-left: 20px;
     text-decoration: underline;
@@ -230,15 +230,37 @@ h1 .fas {
     background-color: rgb(194, 194, 194);
 }
 
-.shortText {
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.gallery img {
+    border: 1px solid rgb(194, 194, 194);
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    
+}
+
+
+audio {
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.shortText, .gridContainer2, .gridContainer3, .gridContainer5, .gridContainer7 {
     display: none;
 }
 
-.gridContainer2, .gridContainer3, .gridContainer5 {
-    display: none;
+@media (max-width: 1700px ) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-@media (max-width: 1300px ) {
+@media (max-width: 1500px ) {
     .gridContainer1 {
         display: none;
     }
@@ -253,11 +275,15 @@ h1 .fas {
 }
 
 @media (max-width: 1200px ) {
-    .gridContainer4 {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gridContainer4, .gridContainer6 {
         display: none;
     }
 
-    .gridContainer5 {
+    .gridContainer5, .gridContainer7 {
         display: inline;
     }
 
@@ -265,6 +291,7 @@ h1 .fas {
         margin-left: 25px;
         margin-right: 25px;
         margin-top: 25px;
+        margin-bottom: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
         background-color: rgb(194, 194, 194);
@@ -275,10 +302,13 @@ h1 .fas {
         margin-bottom: 20px;
     }
 
+    audio {
+        margin-bottom: 5%;
+    }
 }
 
 
-@media (max-width: 1000px ) {
+@media (max-width: 900px ) {
     .longText {
         display: none;
     }
@@ -294,9 +324,7 @@ h1 .fas {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-}
 
-@media (max-width: 800px ) {
     h1 .fas {
         padding-left: 50px;
         padding-right: 50px;
@@ -347,6 +375,21 @@ h1 .fas {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .column {
+        float: center;
+        width: 20%;
+        padding: 0px;
+    }
+
+    form{
+        font-size: 120%;
+        display: grid;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 400px ) {
